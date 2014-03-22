@@ -160,7 +160,6 @@ const CGPathRef FXPageControlDotShapeTriangle = (const CGPathRef)3;
 			}
             
             CGContextSaveGState(context);
-            CGContextTranslateCTM(context, offset + (self.dotSize + self.dotSpacing) * i + self.dotSize / 2, self.frame.size.height / 2);
             if (dotShadowColor && ![dotShadowColor isEqual:[UIColor clearColor]])
             {
                 CGContextSetShadowWithColor(context, dotShadowOffset, dotShadowBlur, dotShadowColor.CGColor);
@@ -171,6 +170,7 @@ const CGPathRef FXPageControlDotShapeTriangle = (const CGPathRef)3;
 			}
 			else
 			{
+                CGContextTranslateCTM(context, offset + (self.dotSize + self.dotSpacing) * i + self.dotSize / 2, self.frame.size.height / 2);
                 [dotColor setFill];
                 if (!dotShape || dotShape == FXPageControlDotShapeCircle)
                 {
