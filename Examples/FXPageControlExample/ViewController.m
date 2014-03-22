@@ -20,7 +20,7 @@
     self.scrollView1.contentSize = self.contentView1.bounds.size;
     self.scrollView1.showsHorizontalScrollIndicator = NO;
     [self.scrollView1 addSubview:self.contentView1];
-    self.pageControl1.numberOfPages = self.contentView1.bounds.size.width / self.scrollView1.bounds.size.width;
+    self.pageControl1.numberOfPages = (int)(self.contentView1.bounds.size.width / self.scrollView1.bounds.size.width);
     self.pageControl1.defersCurrentPageDisplay = YES;
     
     //set up second view
@@ -28,7 +28,7 @@
     self.scrollView2.contentSize = self.contentView2.bounds.size;
     self.scrollView2.showsHorizontalScrollIndicator = NO;
     [self.scrollView2 addSubview:self.contentView2];
-    self.pageControl2.numberOfPages = self.contentView2.bounds.size.width / self.scrollView2.bounds.size.width;
+    self.pageControl2.numberOfPages = (int)(self.contentView2.bounds.size.width / self.scrollView2.bounds.size.width);
     self.pageControl2.defersCurrentPageDisplay = YES;
     self.pageControl2.selectedDotColor = [UIColor redColor];
     self.pageControl2.selectedDotShape = FXPageControlDotShapeSquare;

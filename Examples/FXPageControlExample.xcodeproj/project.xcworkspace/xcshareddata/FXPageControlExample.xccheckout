@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>86F909C9-F4AD-4B1D-AACD-6565DB0F1EF7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FXPageControlExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>60A680A5-7EDB-4783-9E2F-36A8D7561F5C</key>
+		<string>https://github.com/toume/FXPageControl.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Examples/FXPageControlExample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>60A680A5-7EDB-4783-9E2F-36A8D7561F5C</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/toume/FXPageControl.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>60A680A5-7EDB-4783-9E2F-36A8D7561F5C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>60A680A5-7EDB-4783-9E2F-36A8D7561F5C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FXPageControl</string>
+		</dict>
+	</array>
+</dict>
+</plist>
