@@ -65,7 +65,7 @@ const CGPathRef FXPageControlDotShapeTriangle = (const CGPathRef)3;
 @implementation FXPageControl
 
 - (void)setUp
-{	
+{
     //needs redrawing if bounds change
     self.contentMode = UIViewContentModeRedraw;
     
@@ -119,7 +119,7 @@ const CGPathRef FXPageControlDotShapeTriangle = (const CGPathRef)3;
         
 		CGFloat width = [self sizeForNumberOfPages:self.numberOfPages].width;
 		CGFloat offset = (self.frame.size.width - width) / 2;
-    
+        
 		for (int i = 0; i < self.numberOfPages; i++)
 		{
 			UIImage *dotImage = nil;
@@ -160,17 +160,17 @@ const CGPathRef FXPageControlDotShapeTriangle = (const CGPathRef)3;
 			}
             
             CGContextSaveGState(context);
+            CGContextTranslateCTM(context, offset + (self.dotSize + self.dotSpacing) * i + self.dotSize / 2, self.frame.size.height / 2);
             if (dotShadowColor && ![dotShadowColor isEqual:[UIColor clearColor]])
             {
                 CGContextSetShadowWithColor(context, dotShadowOffset, dotShadowBlur, dotShadowColor.CGColor);
             }
 			if (dotImage)
 			{
-				[dotImage drawInRect:CGRectMake((self.dotSize - dotImage.size.width) / 2, (self.frame.size.height - dotImage.size.height) / 2, dotImage.size.width, dotImage.size.height)];
+				[dotImage drawInRect:CGRectMake((self.dotSize - dotImage.size.width) / 2, (self.frame.size.height - dotImage.size.height) / 2 - self.frame.size.height / 2, dotImage.size.width, dotImage.size.height)];
 			}
 			else
 			{
-                CGContextTranslateCTM(context, offset + (self.dotSize + self.dotSpacing) * i + self.dotSize / 2, self.frame.size.height / 2);
                 [dotColor setFill];
                 if (!dotShape || dotShape == FXPageControlDotShapeCircle)
                 {
